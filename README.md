@@ -13,9 +13,9 @@ This is a simple personal portfolio website built with HTML and CSS. It showcase
 
 ## Demo
 
-You can view the live demo of the website [here](#).
+You can view the live demo of the website [here](https://Atimscreative.github.io/stutern-assessment).
 
-![Screenshot](screenshot.png)
+![Screenshot](images/thumbnail.png)
 
 ## Features
 
