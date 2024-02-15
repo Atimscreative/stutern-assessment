@@ -88,6 +88,12 @@ section {
 .header {
   width: 100%;
   padding-block: 10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: var(--bg);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-bar {
@@ -230,6 +236,29 @@ section {
 
   .download-cv:hover {
     background: var(--secondary);
+  }
+}
+
+/* PROJECTS */
+#projects {
+  padding-block: 50px;
+
+  .works {
+    width: 100%;
+  }
+  .work {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: 500ms;
+    }
   }
 }
 
@@ -519,6 +548,27 @@ section {
     flex-direction: row;
     gap: 10px;
   }
+
+  #projects {
+    .works {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .work {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 15px;
+
+      &:hover {
+        img {
+          scale: 1.2;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -578,6 +628,7 @@ section {
     }
   }
 
+  /* SKILLS */
   #skills {
     .skill-set {
       width: calc(50% - 20px);
@@ -589,6 +640,7 @@ section {
     }
   }
 
+  /* CONTACT */
   #contact {
     .contact {
       display: grid;
